@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFP n°408 | Centro de Formación Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        magenta: '#E5007F',
+                        cyan: '#00AEEF',
+                        negro: '#1A1A1A'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-negro font-sans antialiased">
+
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+
+            <div class="flex items-center gap-3">
+                <img src="img/logo-cfp.png" alt="Logo CFP 408"
+                    class="w-10 h-10 rounded-full object-cover shadow-sm hover:scale-105 transition-transform duration-300">
+                <div class="font-heading font-bold text-xl text-negro tracking-tight">CFP N°408</div>
+            </div>
+
+            <button id="btn-menu"
+                class="md:hidden text-negro hover:text-magenta focus:outline-none transition duration-300">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="icono-menu" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <div class="hidden md:flex space-x-8 text-sm font-semibold font-heading uppercase tracking-wider">
+                <a href="#inicio" class="hover:text-cyan transition duration-300">Inicio</a>
+                <a href="#cursos" class="hover:text-magenta transition duration-300">Cursos</a>
+                <a href="#nosotros" class="hover:text-cyan transition duration-300">Nosotros</a>
+            </div>
+        </div>
+
+        <div id="menu-movil" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div
+                class="flex flex-col px-4 pt-2 pb-6 space-y-2 text-center text-sm font-semibold font-heading uppercase tracking-wider">
+                <a href="#inicio"
+                    class="block py-3 text-negro hover:bg-gray-50 hover:text-cyan rounded transition">Inicio</a>
+                <a href="#cursos"
+                    class="block py-3 text-negro hover:bg-gray-50 hover:text-magenta rounded transition">Cursos</a>
+                <a href="#nosotros"
+                    class="block py-3 text-negro hover:bg-gray-50 hover:text-cyan rounded transition">Nosotros</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="bg-white py-24 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="font-heading text-4xl md:text-5xl font-extrabold tracking-tight text-negro mb-6">
+                Centro de Formación Profesional <span class="text-magenta">N°408</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Educación pública, gratuita y de calidad. Te brindamos las herramientas y certificaciones oficiales para
+                potenciar tu futuro laboral.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#cursos"
+                    class="inline-block bg-magenta text-white font-heading font-semibold py-3 px-8 rounded-full shadow hover:bg-pink-700 transition duration-300">
+                    Ver Cursos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-negro mb-4">
+                    Nuestros <span class="text-cyan">Cursos</span>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Formación práctica, actualizada y con certificación oficial para que te insertes rápidamente en el
+                    mercado laboral.
+                </p>
+                <div class="w-16 h-1 bg-negro mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-magenta mb-3 border border-magenta inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-magenta transition duration-300">
+                            Diseño de Página web</h4>
+                        <p class="text-sm text-gray-600">
+                            Aprende a crear estructuras web y darles estilo profesional usando HTML y CSS para construir
+                            sitios funcionales.
+                        </p>
+                    </div>
+                    <a href="curso-web.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-magenta font-semibold py-2 rounded-lg border border-gray-200 hover:bg-magenta hover:text-white hover:border-magenta transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-cyan mb-3 border border-cyan inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-cyan transition duration-300">
+                            Diseño Gráfico 1</h4>
+                        <p class="text-sm text-gray-600">
+                            Adquiere los fundamentos del diseño y las habilidades esenciales para crear ilustraciones y
+                            gráficos vectoriales utilizando Adobe Illustrator.
+                        </p>
+                    </div>
+                    <a href="curso-dg1.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-cyan font-semibold py-2 rounded-lg border border-gray-200 hover:bg-cyan hover:text-white hover:border-cyan transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-cyan mb-3 border border-cyan inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-cyan transition duration-300">
+                            Diseño Gráfico 2</h4>
+                        <p class="text-sm text-gray-600">
+                            Profundiza tus conocimientos y técnicas avanzadas en Adobe Illustrator, aplicando
+                            herramientas complejas para proyectos de diseño gráfico más elaborados.
+                        </p>
+                    </div>
+                    <a href="curso-dg2.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-cyan font-semibold py-2 rounded-lg border border-gray-200 hover:bg-cyan hover:text-white hover:border-cyan transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-magenta mb-3 border border-magenta inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-magenta transition duration-300">
+                            Gestión de Redes: Fotoproducto</h4>
+                        <p class="text-sm text-gray-600">
+                            Domina la gestión de redes sociales como Instagram y perfecciona técnicas para tomar
+                            fotografías de productos atractivas y de alta calidad.
+                        </p>
+                    </div>
+                    <a href="curso-fotoproducto.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-magenta font-semibold py-2 rounded-lg border border-gray-200 hover:bg-magenta hover:text-white hover:border-magenta transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-cyan mb-3 border border-cyan inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-cyan transition duration-300">
+                            Gestión de Redes: Video</h4>
+                        <p class="text-sm text-gray-600">
+                            Concéntrate en el contenido audiovisual, aprendiendo a editar y crear videos cautivadores
+                            usando el software profesional Premiere Pro.
+                        </p>
+                    </div>
+                    <a href="curso-video.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-cyan font-semibold py-2 rounded-lg border border-gray-200 hover:bg-cyan hover:text-white hover:border-cyan transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-magenta mb-3 border border-magenta inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-magenta transition duration-300">
+                            Serigrafía</h4>
+                        <p class="text-sm text-gray-600">
+                            Descubrí el arte de la impresión serigráfica y aprendé a estampar tus propios diseños sobre
+                            múltiples superficies.
+                        </p>
+                    </div>
+                    <a href="curso-serigrafia.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-magenta font-semibold py-2 rounded-lg border border-gray-200 hover:bg-magenta hover:text-white hover:border-magenta transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex flex-col h-full opacity-80">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-gray-500 mb-3 border border-gray-400 inline-block px-2 py-1 rounded bg-gray-200">
+                            Próximamente</div>
+                        <h4 class="font-heading font-bold text-gray-500 text-xl leading-tight mb-3">Modelado e impresión
+                            3D</h4>
+                        <p class="text-sm text-gray-500">
+                            Este curso se habilitará muy pronto. Mantente atento a nuestras novedades para conocer el
+                            programa completo.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-6 text-center block w-full bg-gray-200 text-gray-500 font-semibold py-2 rounded-lg cursor-not-allowed">
+                        Aún no disponible
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col h-full group">
+                    <div class="mb-auto">
+                        <div
+                            class="text-[10px] font-bold uppercase tracking-wider text-negro mb-3 border border-negro inline-block px-2 py-1 rounded">
+                            Certificado Oficial</div>
+                        <h4
+                            class="font-heading font-bold text-negro text-xl leading-tight mb-3 group-hover:text-gray-600 transition duration-300">
+                            Operador de Software</h4>
+                        <p class="text-sm text-gray-600">
+                            Conocé como funciona una computadora y perfeccioná tus habilidades en software de Ofimática.
+                        </p>
+                    </div>
+                    <a href="curso-operador.html"
+                        class="mt-6 text-center block w-full bg-gray-50 text-negro font-semibold py-2 rounded-lg border border-gray-200 hover:bg-negro hover:text-white hover:border-negro transition duration-300">
+                        Ver detalles
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripcion" class="py-20 bg-negro text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-extrabold mb-4">
+                    ¿Cómo es el <span class="text-magenta">Proceso de Inscripción</span>?
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Nuestras vacantes son limitadas. Para asegurarte un lugar en el próximo cuatrimestre, solo tenés que seguir estos 3 pasos:
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <div class="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 bg-gray-800 -z-10 transform -translate-y-1/2"></div>
+
+                <div class="bg-gray-900 border border-gray-800 p-8 rounded-2xl text-center relative z-10 hover:border-magenta transition duration-300">
+                    <div class="w-16 h-16 mx-auto bg-magenta text-white rounded-full flex items-center justify-center font-heading font-bold text-2xl mb-6 shadow-lg">1</div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Atento al Instagram</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Seguí nuestra cuenta <a href="https://www.instagram.com/cfp408lomas/" target="_blank" class="text-magenta hover:underline font-semibold">@cfp408lomas</a>. Allí anunciamos oficialmente las fechas de apertura para cada curso.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 p-8 rounded-2xl text-center relative z-10 hover:border-cyan transition duration-300">
+                    <div class="w-16 h-16 mx-auto bg-cyan text-negro rounded-full flex items-center justify-center font-heading font-bold text-2xl mb-6 shadow-lg">2</div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Envianos un Mail</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Cuando veas la publicación del curso que te interesa, envianos un correo electrónico a nuestra casilla solicitando tu vacante.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 p-8 rounded-2xl text-center relative z-10 hover:border-white transition duration-300">
+                    <div class="w-16 h-16 mx-auto bg-white text-negro rounded-full flex items-center justify-center font-heading font-bold text-2xl mb-6 shadow-lg">3</div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Completá el Formulario</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Te responderemos el mail enviándote un formulario online. Al completarlo con tus datos, tu inscripción quedará en proceso.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-negro mb-4">
+                    Nuestra <span class="text-cyan">Identidad</span>
+                </h2>
+                <div class="w-16 h-1 bg-magenta mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 mb-24">
+                <div
+                    class="bg-gray-50 p-10 rounded-2xl shadow-sm border-t-4 border-magenta hover:shadow-md transition duration-300">
+                    <h3 class="font-heading text-2xl font-bold text-negro mb-4">Nuestra Misión</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Potenciamos y desarrollamos las habilidades laborales de jóvenes y adultos a través de
+                        experiencias de aprendizaje creativas e innovadoras. Buscamos combinar los saberes de la
+                        industria gráfica, el diseño y la tecnología para impulsar los proyectos de nuestros
+                        estudiantes. Contamos con el reconocimiento del Gobierno de la Provincia de Buenos Aires.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-10 rounded-2xl shadow-sm border-t-4 border-cyan hover:shadow-md transition duration-300">
+                    <h3 class="font-heading text-2xl font-bold text-negro mb-4">Nuestra Visión</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Buscamos promover la igualdad de oportunidades a través de instancias educativas y de la
+                        difusión de los valores y conocimientos de la Federación Gráfica Bonaerense.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mb-16">
+                <h3 class="font-heading text-2xl md:text-3xl font-extrabold text-negro mb-4">
+                    Equipo <span class="text-magenta">Directivo y Docente</span>
+                </h3>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-10 md:gap-14">
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/eva.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Eva Amichetti</h4>
+                    <p class="text-xs text-magenta font-bold uppercase tracking-widest mt-2">Directora</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/nazarena.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Nazarena Jara Berón</h4>
+                    <p class="text-xs text-cyan font-bold uppercase tracking-widest mt-2">Secretaria</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/rodrigo.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Rodrigo Podoba</h4>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-2">Docente</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/daiana.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Daiana Cabello</h4>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-2">Docente</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/macarena.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Macarena Moyano</h4>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-2">Docente</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/sabrina.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Sabrina Lara</h4>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-2">Docente</p>
+                </div>
+
+                <div class="w-36 md:w-44 text-center">
+                    <img src="img/laura.jpg" alt="Nombre del Docente"
+                        class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover shadow-inner border-2 border-transparent hover:border-magenta transition duration-300 mb-4">
+                    <h4 class="font-heading font-bold text-negro text-lg leading-tight">Laura Piriz</h4>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-2">Docente</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-negro text-white pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <div class="grid md:grid-cols-3 gap-10 mb-12">
+
+                <div>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Educación pública, gratuita y de calidad. Formación profesional con certificación oficial.
+                    </p>
+
+                    <img src="img/logo-federacion.png" alt="Federación Gráfica Bonaerense"
+                        class="w-auto h-16 opacity-80 hover:opacity-100 transition duration-300">
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 text-cyan">Contacto y Sede</h4>
+                    <ul class="space-y-4 text-gray-300 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-5 text-magenta shrink-0 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <span>Fonrouge 326<br>Lomas de Zamora, Buenos Aires</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-5 text-cyan shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                            <a href="mailto:cfp408lomas@gmail.com"
+                                class="hover:text-white hover:underline transition">cfp408lomas@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 text-magenta">Nuestras Redes</h4>
+                    <p class="text-gray-400 text-sm mb-4">Seguinos para enterarte de nuevas inscripciones, muestras y
+                        novedades del centro.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cfp408lomas/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-magenta hover:scale-110 transition duration-300 shadow-lg"
+                            aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; 2026 Centro de Formación Profesional n°408. Todos los derechos reservados.</p>
+                <p>Sitio web informativo desarrollado para la comunidad.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const menuMovil = document.getElementById('menu-movil');
+        const iconoMenu = document.getElementById('icono-menu');
+
+        // Al hacer clic en el botón de hamburguesa
+        btnMenu.addEventListener('click', () => {
+            menuMovil.classList.toggle('hidden'); // Muestra/Oculta el menú
+
+            // Cambia el icono entre hamburguesa y la cruz (X)
+            if (menuMovil.classList.contains('hidden')) {
+                iconoMenu.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                iconoMenu.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        // Cierra el menú automáticamente cuando se hace clic en una opción
+        const enlacesMoviles = menuMovil.querySelectorAll('a');
+        enlacesMoviles.forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                menuMovil.classList.add('hidden');
+                iconoMenu.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
